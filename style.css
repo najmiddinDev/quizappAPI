@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e0e0;
+}
+
+.quiz-list-active {
+    padding: 70px 40px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+button {
+    background: white;
+    padding: 10px 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background: #c9c7c7;
+}
+
+#loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.4s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.restart button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#restartButton i {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.currenQuestion {
+    text-align: center;
+    font-size: 50px;
+}
+
+.quiz-list {
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+    body h1 {
+        font-size: 30px;
+    }
+}
